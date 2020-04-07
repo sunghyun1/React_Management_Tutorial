@@ -13,6 +13,7 @@ class Customer extends React.Component {
                 <TableCell>{this.props.birthday}</TableCell>
                 <TableCell>{this.props.gender}</TableCell>
                 <TableCell>{this.props.job}</TableCell>
+                <TableCell><CustomerDelete stateRefesh={this.props.stateRefesh} id={this.props.id}/></TableCell>
             </TableRow>
         )
     }
